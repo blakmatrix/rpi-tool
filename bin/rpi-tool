@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+// require('../lib/rpi-tool/completion');
+
+process.title = 'rpi-tool';
+
+var path = require('path'),
+     rpi = require(path.join(__dirname, '..', 'lib','rpi-tool'));
+
+rpi.start(function (err) {
+  if (!err) {
+    rpi.log.info('rpi-tool'.grey + ' ok'.green.bold);
+  }
+  process.exit(err ? 1 : 0);
+});

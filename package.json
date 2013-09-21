@@ -1,0 +1,40 @@
+{
+  "name": "rpi-tool",
+  "version": "0.0.1",
+  "description": "RaspberryPi tool",
+  "main": "bin/rpi-tool",
+  "scripts": {
+    "start": "node bin/rpi-tool"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blakmatrix/rpi-tool"
+  },
+  "keywords": [
+    "rpi",
+    "raspberry",
+    "pi",
+    "tool",
+    "download",
+    "image",
+    "write",
+    "disk"
+  ],
+  "bin": {
+    "rpi-tool": "./bin/rpi-tool"
+  },
+  "author": "Farrin Reid <blakmatrix@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "flatiron": "0.3.x",
+    "request": "2.22.x",
+    "pkginfo": "0.3.x",
+    "colors": "0.6.x",
+    "utile": "~0.2.0",
+    "progress": "1.0.x",
+    "buffered-reader": "~1.0.1",
+    "buffered-writer": "~0.2.3",
+    "mkdirp": "0.3.x",
+    "dateformat": "~1.0.6-1.2.3"
+  }
+}
